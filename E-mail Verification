@@ -1,0 +1,13 @@
+# Importing Regular Expression Library/Package
+import re
+# Taking input and converting into integer
+n=int(input())
+# Pattern for valid e-mail
+com='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
+# loop for n emails
+for i in range(0,n):
+    # taking email as input
+    email=input()
+    # if given email pattern matches with valid email pattern then it enters inside the if block
+    if(re.search(com,email)):
+        print(email)
