@@ -1,0 +1,11 @@
+# taking input and converting to integer
+n=int(input())
+# creating list to store the elements
+l=[]
+for k in range(1,n+1):
+    # appending the elements to the list
+    l.append(str(k))
+    # printing the elements of list by joining them together
+    print(''.join(l),end="")
+    # printing reverse of the elements by joining them together for the second half of the pattern
+    print(''.join(l[-2::-1]))
